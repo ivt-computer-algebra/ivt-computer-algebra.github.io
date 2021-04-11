@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Системы компьютерной алгебры</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="header">
+            <h1>Системы компьютерной алгебры</h1>
+        </div>
+        <div id="main">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Главная страница</a></li>
+                    <li><a href="maxima.html">Maxima</a></li>
+                    <li><a href="geogebra.html">GeoGebra</a></li>
+                    <li><a href="scilab.html">Scilab</a></li>
+                    <li><a href="wolfram.html">WolframAlpha</a></li>
+                    <li><a href="msexcel.html">MS Excel</a></li>
+                    <li><a href="authors.html">Авторы</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <h2>GeoGebra</h2>
+                <h3>О программе</h3>
+                <p>GeoGebra – это бесплатная, кроссплатформенная динамическая математическая программа для всех уровней образования, включающая в себя геометрию, алгебру, таблицы, графы, статистику и арифметику, в одном удобном для использования пакете.</p>
+                <h3>Основные возможности</h3>
+                <p>Построение кривых:</p>
+                <ol>
+                    <li>Построение графиков функций y=f(x)</li>
+                    <li>Построение кривых, заданных параметрически в декартовой системе координат: x=f(t);   y=g(t)</li>
+                    <li>Построение конических сечений (окружность, эллипс, парабола, гипербола)</li>
+                    <li>Построение геометрического места точек, зависящих от положения некоторой другой точки, принадлежащей какой-либо кривой или многоугольнику</li>
+                </ol>
+                <p>Вычисления:</p>
+                <ol>
+                    <li>Действия с матрицами (сложение, умножение, транспонирование, вычисление определителя)</li>
+                    <li>Вычисления с комплексными числами</li>
+                    <li>Нахождение точек пересечения прямых</li>
+                    <li>Статистические функции (вычисление математического ожидания, дисперсии, коэффициента корреляции)</li>
+                    <li>Аппроксимация множества точек кривой заданного вида (полином, экспонента, логарифм, синусоида)</li>
+                </ol>
+                <h3>Решение задач алгебры</h3>
+                <p>1. Найти корни квадратного уравнения x^2+3x-4=0 на промежутке от -10 до 10</p>
+                <p>Алгоритм решения:</p>
+                <ol>
+                <li>Ввести функцию f(x)=x^2+3x-4</li>
+                <li>Воспользоваться командой<br>
+                <code>Roots(<функция>,<начальное значение x>,<конечное значение x>)</code></li>
+                </ol>
+                <div><img src="images/geogebra/algerbra/1.png" alt=""></div>
+                <p>2. Найти корни тригонометрического уравнения sin⁡(x)+cos⁡(x)=1 на промежутке от -2π до 2π</p>
+                <p>Алгоритм решения:</p>
+                <ol>
+                <li>3. Преобразовать выражение: sin⁡(x)+cos⁡(x)-1=0</li>
+                <li>Ввести функцию f(x)=sin⁡(x)+cos⁡(x)-1</li>
+                <li>Воспользоваться командой<br>
+                <code>Roots(<функция>,<начальное значение x>,<конечное значение x>)</code></li>
+                </ol>
+                <div><img src="images/geogebra/algerbra/2.png" alt=""></div>
+                <p>Разделить один многочлен x^2+3x+1 на другой x-1</p>
+                <p>Синтаксис:</p>
+                <code>Div (<Делимое>,<Делитель>)</code>
+                <div><img src="images/geogebra/algerbra/3.png" alt=""></div>
+                <p>4. Упростить выражение (2x-1)^2+2x+3</p>
+                <p>Синтаксис:</p>
+                <code>Expand( <Выражение> )</code>
+                <div><img src="images/geogebra/algerbra/4.png" alt=""></div>
+                <p>5. Разложить на множители многочлен x^2+x-6</p>
+                <p>Синтаксис:</p>
+                <code>Factor( <Выражение> )</code>
+                <div><img src="images/geogebra/algerbra/5.png" alt=""></div>
+                <p>6. Найти наибольший общий делитель чисел 12, 30, 18</p>
+                <p>Синтаксис:</p>
+                <code>GCD( {Список чисел} )</code>
+                <div><img src="images/geogebra/algerbra/6.png" alt=""></div>
+                <p>7. Найти наименьшее общее кратное чисел 12, 30, 18</p>
+                <p>Синтаксис:</p>
+                <code>LCM ({Список чисел})</code>
+                <div><img src="images/geogebra/algerbra/7.png" alt=""></div>
+                <p>8. Найти наименьшее значение функции e^x*x^3 на промежутке от -4 до -2</p>
+                <p>Синтаксис:</p>
+                <code>Min(<функция>,<начальное значение x>,<конечное значение x>) </code>
+                <div><img src="images/geogebra/algerbra/8.png" alt=""></div>
+                <p>9. Разложить число 42 на простые множители</p>
+                <p>Синтаксис:</p>
+                <code>PrimeFactors (<Число>)</code>
+                <div><img src="images/geogebra/algerbra/9.png" alt=""></div>
+                <p>10. Выделить полный квадрат x^2-4x+7</p>
+                <p>Синтаксис:</p>
+                <code>CompleteSquare (<выражение>)</code>
+                <div><img src="images/geogebra/algerbra/10.png" alt=""></div>
+                <p>11. Найти декартово произведение векторов A{1,3,2} и B{0,3,-2}</p>
+                <p>Синтаксис:</p>
+                <code>Cross( <Вектор a> ,<Вектор b> )</code>
+                <div><img src="images/geogebra/algerbra/11.png" alt=""></div>
+                <p>12. Найти определитель матрицы <img src="images/geogebra/algerbra/12_1.png" alt=""></p>
+                <p>Синтаксис:</p>
+                <code>Determinant( <Матрица> )</code>
+                <code>Determinant({{17,3},{-8,11}})</code>
+                <div><img src="images/geogebra/algerbra/12_2.png" alt=""></div>
+                <h3>Решение задач математического анализа</h3>
+                <p>1. Найти первую производную функции x^3+x^2+x</p>
+                <p>Синтаксис:</p>
+                <code>Derivative( <Функция> )</code>
+                <div><img src="images/geogebra/analysis/1.png" alt=""></div>
+                <p>2. Найти вторую производную функции x^3+x^2+x</p>
+                <p>Синтаксис:</p>
+                <code>Derivative( <Функция>,<Порядок> )</code>
+                <div><img src="images/geogebra/analysis/2.png" alt=""></div>
+                <p>3. Найти экстремум функции <img src="3_1.png" alt=""></p>
+                <p>Синтаксис:</p>
+                <code>Derivative( <Функция> )</code>
+                <div><img src="images/geogebra/analysis/3_2.png" alt=""></div>
+                <p>4. Вычислить неопределенный интеграл ∫(x^2+5x+3)dx</p>
+                <p>Синтаксис:</p>
+                <code>Integral( <Функция> )</code>
+                <div><img src="images/geogebra/analysis/4.png" alt=""></div>
+                <p>5. Вычислить определенный интеграл <img src="images/geogebra/analysis/5_1.png"></p>
+                <p>Синтаксис:</p>
+                <code>Integral( <Функция>,<Нижний предел>,<Верхний предел> )</code>
+                <div><img src="images/geogebra/analysis/5_2.png" alt=""></div>
+                <p>6. Найти предел <img src="images/geogebra/analysis/6_1.png"></p>
+                <p>Синтаксис:</p>
+                <code>Limit(<Функция>,<Значение точки,к которому стремится аргумент>)</code>
+                <div><img src="images/geogebra/analysis/6_2.png" alt=""></div>
+                <p>7. Решить дифференциальное уравнение первого порядка <img src="images/geogebra/analysis/7_1.png"> при <img src="images/geogebra/analysis/7_2.png"></p>
+                <p>Алгоритм решения:</p>
+                <ol>
+                    <li>Преобразовать выражение: <img src="images/geogebra/analysis/7_3.png"></li>
+                    <li>Воспользоваться командой<br>
+                        <code>SolveODE (<f '(x,y)>,<Точка на f>)</code>
+                    </li>
+                </ol>
+                <div><img src="images/geogebra/analysis/7_4.png" alt=""></div>
+                <h3>Решение задач геометрии</h3>
+                <p>1. Найти точки пересечения -3x + 7y = -10   и   x^2 + 2y^2 = 8</p>
+                <p>Алгоритм решения:</p>
+                <ol>
+                    <li>Ввести a: -3x + 7y = -10</li>
+                    <li>Ввести b: x^2 + 2y^2 = 8</li>
+                    <li>Воспользоваться командой<br>
+                        <code>Intersect( < Object >,< Object > )</code>
+                        В данном случае: <code>Intersect( a,b )</code>
+                    </li>
+                </ol>
+                <div><img src="images/geogebra/geometry/1.png" alt=""></div>
+                <p>2. Построить линию через две точки A(-4,5) и B(6,-13)</p>
+                <p>Синтаксис:</p>
+                <code>Line( <Координаты точки>,<Координаты точки> )</code>
+                <div><img src="images/geogebra/geometry/2.png" alt=""></div>
+                <p>3. Найти периметр многоугольника с координатами A(1,2),B(3,2) и C(4,3)</p>
+                <div><img src="images/geogebra/geometry/3.png" alt=""></div>
+                <p>4. Построить правильный шестиугольник по двум заданным точкам A(1,1),B(4,1)</p>
+                <p>Синтаксис:</p>
+                <code>Polygon(<Точка>,<Точка>,<Количество вершин>)</code>
+                <div><img src="images/geogebra/geometry/4.png" alt=""></div>
+                <p>5. Найти радиус окружности, заданной уравнением (x - 2)² + (y - 2)² = 24</p>
+                <div><img src="images/geogebra/geometry/5.png" alt=""></div>
+                <p>6. Найти расстояние между двумя прямыми y = x + 3   и   y = x + 1</p>
+                <div><img src="images/geogebra/geometry/6.png" alt=""></div>
+                <p>7. Найти расстояние между точкой A(2,1) и объектом, заданным уравнением x^2  + (y - 1)^2  = 1</p>
+                <p>Синтаксис:</p>
+                <code>Distance( <Точка>,<Объект> )</code>
+                <div><img src="images/geogebra/geometry/7.png" alt=""></div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>© Группа студентов 2ИВТ(2)/19</p>
+        </div>
+    </body>
+</html>
